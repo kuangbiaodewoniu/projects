@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Page</title>
+</head>
+<body>
+    <h1>发布会管理</h1>
+    <form action="/login_action/" method="post">
+        用户名：<input type="text" name="username" placeholder="输入用户名"><br>
+        密  码：<input type="password" name="password" placeholder="输入密码"><br>
+        {{error}}<br>
+        <button type="submit" id="btn_login">登录</button>
+        <br>
+        {% csrf_token %}
+    </form>
+</body>
+</html>
